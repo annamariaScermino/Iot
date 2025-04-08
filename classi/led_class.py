@@ -2,7 +2,7 @@ from machine import Pin, PWM
 
 """classe per l'oggetto Led"""
  class LED:
-    def __init__(self, sig_pin, flag=True, freq=0):
+    def __init__(self, sig_pin, flag=True, freq=5000):
         """Passando solo il numero del Pin, il led è istanziato come Pin"""
         if flag:
             self.led=Pin(sig_pin, Pin.OUT)
