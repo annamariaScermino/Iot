@@ -14,8 +14,7 @@ from machine import Pin, PWM
         
     def ledOff(self):
         self.led.off()
-        
-        
+                
     def ledDuty(self,duty):
         self.led.duty(duty)
     
